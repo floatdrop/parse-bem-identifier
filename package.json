@@ -1,0 +1,31 @@
+{
+  "name": "parse-bem-identifier",
+  "version": "0.0.0",
+  "description": "Parse B__E_M identifier",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:floatdrop/parse-bem-identifier.git"
+  },
+  "keywords": [
+    "Parse",
+    "BEM",
+    "id"
+  ],
+  "author": "Vesvolod Strukchinsky <floatdrop@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/floatdrop/parse-bem-identifier/issues"
+  },
+  "homepage": "https://github.com/floatdrop/parse-bem-identifier",
+  "devDependencies": {
+    "mocha": "^1.21.3",
+    "should": "^4.0.4"
+  }
+}
