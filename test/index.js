@@ -10,12 +10,12 @@ describe('parse', function () {
 
     it('should parse block_mod', function () {
         parse('block_mod')
-        .should.eql({block: 'block', mods: { mod: true }});
+        .should.eql({block: 'block', mod: 'mod', modValue: true });
     });
 
     it('should parse block_mod_true', function () {
         parse('block_mod_true')
-        .should.eql({block: 'block', mods: { mod: 'true' }});
+        .should.eql({block: 'block', mod: 'mod', modValue: 'true' });
     });
 
     it('should parse block__elem', function () {
@@ -27,7 +27,9 @@ describe('parse', function () {
         parse('block__elem_mod')
         .should.eql({
             block: 'block',
-            elem: 'elem', elemMods: { mod: true }
+            elem: 'elem',
+            elemMod: 'mod',
+            elemModValue: true
         });
     });
 
@@ -35,14 +37,18 @@ describe('parse', function () {
         parse('block__elem_mod_true')
         .should.eql({
             block: 'block',
-            elem: 'elem', elemMods: { mod: 'true' }
+            elem: 'elem',
+            elemMod: 'mod',
+            elemModValue: 'true'
         });
     });
 
     it('should parse block_mod__elem', function () {
         parse('block_mod__elem')
         .should.eql({
-            block: 'block', mods: { mod: true },
+            block: 'block',
+            mod: 'mod',
+            modValue: true,
             elem: 'elem'
         });
     });
@@ -50,16 +56,16 @@ describe('parse', function () {
     it('should parse block_mod__elem_mod', function () {
         parse('block_mod__elem_mod')
         .should.eql({
-            block: 'block', mods: { mod: true },
-            elem: 'elem', elemMods: { mod: true }
+            block: 'block', mod: 'mod', modValue: true,
+            elem: 'elem', elemMod: 'mod', elemModValue: true
         });
     });
 
     it('should parse block_mod_value__elem_mod_value', function () {
         parse('block_mod_true__elem_mod_true')
         .should.eql({
-            block: 'block', mods: { mod: 'true' },
-            elem: 'elem', elemMods: { mod: 'true' }
+            block: 'block', mod: 'mod', modValue: 'true',
+            elem: 'elem', elemMod: 'mod', elemModValue: 'true'
         });
     });
 });
