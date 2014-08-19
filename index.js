@@ -9,7 +9,9 @@ module.exports = function parseBhIdentifier(pattern, options) {
     result.block = blockArray[0];
     if (blockArray.length > 1) {
         result.mod = blockArray[1];
-        result[short ? 'value' : 'modValue'] = blockArray[2] || true;
+        if (blockArray[2]) {
+            result[short ? 'value' : 'modValue'] = blockArray[2];
+        }
     }
 
     if (blockElement.length > 1) {
@@ -17,7 +19,9 @@ module.exports = function parseBhIdentifier(pattern, options) {
         result.elem = elementArray[0];
         if (elementArray.length > 1) {
             result[short ? 'mod' : 'elemMod'] = elementArray[1];
-            result[short ? 'value' : 'elemModValue'] = elementArray[2] || true;
+            if (elementArray[2]) {
+                result[short ? 'value' : 'elemModValue'] = elementArray[2];
+            }
         }
     }
 
