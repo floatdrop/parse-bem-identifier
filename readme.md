@@ -12,10 +12,10 @@ Parses `string` as BEM identifier and returns object, that contains:
 
  * `block`
  * `mod`
- * `modValue`
+ * `modVal`
  * `elem`
  * `elemMod`
- * `elemValue`
+ * `elemVal`
 
 #### options
 
@@ -23,7 +23,7 @@ Parses `string` as BEM identifier and returns object, that contains:
 Type: `Boolean`  
 Default: `false`
 
-If true, then `elemMod` will be stored in `mod`, `modValue` and `elemValue` will be stored in `value`.
+If true, then `elemMod` will be stored in `mod`, `modVal` and `elemVal` will be stored in `val`.
 
 # License
 MIT (c) 2014 Vsevolod Strukchinsky (floatdrop@gmail.com)

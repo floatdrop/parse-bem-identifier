@@ -19,7 +19,7 @@ describe('parse.short', function () {
 
     it('should parse block_mod_true', function () {
         parse('block_mod_true')
-        .should.eql({block: 'block', mod: 'mod', value: 'true' });
+        .should.eql({block: 'block', mod: 'mod', val: 'true' });
     });
 
     it('should parse block__elem', function () {
@@ -42,7 +42,7 @@ describe('parse.short', function () {
             block: 'block',
             elem: 'elem',
             mod: 'mod',
-            value: 'true'
+            val: 'true'
         });
     });
 
@@ -69,7 +69,7 @@ describe('parse.short', function () {
             block: 'block',
             elem: 'elem',
             mod: 'mod',
-            value: 'true'
+            val: 'true'
         });
     });
 });

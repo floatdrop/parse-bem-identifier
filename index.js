@@ -10,7 +10,7 @@ module.exports = function parseBhIdentifier(pattern, options) {
     if (blockArray.length > 1) {
         result.mod = blockArray[1];
         if (blockArray[2]) {
-            result[short ? 'value' : 'modValue'] = blockArray[2];
+            result[short ? 'val' : 'modVal'] = blockArray[2];
         }
     }
 
@@ -20,7 +20,7 @@ module.exports = function parseBhIdentifier(pattern, options) {
         if (elementArray.length > 1) {
             result[short ? 'mod' : 'elemMod'] = elementArray[1];
             if (elementArray[2]) {
-                result[short ? 'value' : 'elemModValue'] = elementArray[2];
+                result[short ? 'val' : 'elemModVal'] = elementArray[2];
             }
         }
     }
