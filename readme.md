@@ -4,6 +4,10 @@ Parsing B__E_M identifier.
 
 You can learn about identifier structure from [tests](https://github.com/floatdrop/parse-bem-identifier/blob/master/test/index.js).
 
+## Disclaimer
+
+Use [`bem-naming`](https://github.com/bem/bem-naming)
+
 ## API
 
 ### parseBemIdentifier(string, [options])
