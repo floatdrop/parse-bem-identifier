@@ -10,7 +10,7 @@ Use [`bem-naming`](https://github.com/bem/bem-naming)
 
 ## API
 
-### parseBemIdentifier(string, [options])
+### parseBemIdentifier(pattern, [options])
 
 Parses `string` as BEM identifier and returns object, that contains:
 
