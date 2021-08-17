@@ -3,6 +3,7 @@
   "version": "4.0.0",
   "description": "Parse B__E_M identifier",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "test": "test"
   },

@@ -1,7 +1,6 @@
 /* global describe, it */
-
-var parse = require('..');
-require('should');
+import parse from '../index.js'
+import should from 'should'
 
 describe('parse', function () {
     it('should parse block', function () {

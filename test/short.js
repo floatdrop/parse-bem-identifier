@@ -1,11 +1,10 @@
 /* global describe, it */
+import parseBemId from '../index.js'
+import should from 'should'
 
-var parseBemId = require('..');
 var parse = function (string) {
     return parseBemId(string, { short: true });
 };
-
-require('should');
 
 describe('parse.short', function () {
     it('should parse block', function () {
