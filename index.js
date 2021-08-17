@@ -1,4 +1,4 @@
-module.exports = function parseBemIdentifier(pattern, options) {
+export default function parseBemIdentifier(pattern, options) {
     var result = {};
     options = options || {};
     var short = options.short;
